@@ -12,9 +12,10 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(appBar: AppBar(title: Text(FlavorConfig.instance.name)),
+      home: Scaffold(
+        appBar: AppBar(title: Text(FlavorConfig.instance.name)),
         body: Center(
-          child: Text('Hello ${FlavorConfig.instance.baseUrl}'),
+          child: Text('Helloo ${FlavorConfig.instance.baseUrl}'),
         ),
       ),
     );
