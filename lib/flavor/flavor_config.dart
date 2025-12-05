@@ -3,10 +3,10 @@ enum Flavor { dev, staging, production }
 class FlavorConfig {
   final Flavor flavor;
   final String name;
-  final String baseUrl;
+  final String baseUrl; 
   static FlavorConfig? _instance;
   FlavorConfig._(
-      {required this.flavor, required this.name, required this.baseUrl});
+      {required this.flavor, required this.name, required this.baseUrl,});
 
   factory FlavorConfig(
       {required Flavor flavor, required String name, required String baseUrl}) {
